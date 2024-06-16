@@ -1,0 +1,20 @@
+tolerance 2.0 # tolerance distance
+output cellulose_IL.pdb # output file name
+filetype pdb # output file type
+
+structure ../input/cellulose.pdb
+    number 1 # Number of molecules
+    fixed 0. 0. 0. 0. 0. 0.
+end structure
+
+structure ../cation_ff/cation.pdb
+    number 1000
+    inside box 0. 0. 0. 59. 59. 89.
+end structure
+
+structure ../anion_ff/anion.pdb
+    number 1000
+    inside box 0. 0. 0. 59. 59. 89.
+end structure
+
+add_box_sides 1.0

@@ -1,0 +1,6 @@
+source leaprc.gaff
+
+molecule = loadmol2 a_1_edit_charge.mol2
+loadamberparams a_1.frcmod
+saveamberparm molecule a_1.prmtop a_1.inpcrd
+quit
